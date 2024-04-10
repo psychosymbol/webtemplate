@@ -47,6 +47,12 @@ public class SuperXGameManager : MonoBehaviour
         int[] rouletteMember;
         string SuperX = "Super7";
         currentTarget = x;
+
+        for (int i = 0; i < helperBoards.Count; i++)
+        {
+            helperBoards[i].SetActive(false);
+        }
+
         switch (x)
         {
             default:
